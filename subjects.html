@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects - TMD</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        /* Modern Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #991b1b; /* Matching the deep red logo tone from image_575770.png */
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            color: #991b1b;
+        }
+
+        /* Fixed active link for the current page */
+        .nav-links .active-link {
+            color: #991b1b;
+            background-color: #fef2f2;
+        }
+
+        /* Main Section Header */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #991b1b;
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Subject Card Grid */
+        .subject-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Engaging Card Design */
+        .subject-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid #991b1b; /* Subtle colorful top border */
+        }
+
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .subject-card h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+
+        .subject-card p {
+            color: #64748b;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">TMD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="subjects.html" class="active-link">Subjects</a></li>
+                <li><a href="profile.html">Business Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section container">
+        <h2>What We Teach</h2>
+        <div class="subject-grid">
+            <div class="subject-card">
+                <h3>Mathematics</h3>
+                <p>Algebra, Calculus, and Statistics.</p>
+            </div>
+            <div class="subject-card">
+                <h3>Science</h3>
+                <p>Biology, Chemistry, and Physics.</p>
+            </div>
+            <div class="subject-card">
+                <h3>English</h3>
+                <p>Grammar, Literature, and ESL.</p>
+            </div>
+            <div class="subject-card">
+                <h3>History</h3>
+                <p>Philippine & World History.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

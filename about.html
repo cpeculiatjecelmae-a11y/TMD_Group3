@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TMD</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        /* Modern Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #991b1b; /* Deep red branding tone */
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            color: #991b1b;
+        }
+
+        .nav-links .active-link {
+            color: #991b1b;
+            background-color: #fef2f2;
+        }
+
+        /* Main Section Header */
+        .container {
+            max-width: 900px; /* Slimmer container for better readability on reading-heavy pages */
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .intro-block {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #475569;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Mission & Vision Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        /* Styled Value Cards */
+        .value-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #991b1b; /* Classy left border emphasis */
+        }
+
+        .value-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        .value-card h3 {
+            font-size: 1.5rem;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .value-card p {
+            color: #64748b;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">TMD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active-link">About</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="profile.html">Business Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section container">
+        <div class="intro-block">
+            <h1>About Tutor My Dreams</h1>
+            <p class="tagline">Founded in 2026, TMD is dedicated to bridging the gap between classroom learning and academic excellence.</p>
+        </div>
+        
+        <div class="about-grid">
+            <div class="value-card">
+                <h3>Our Mission</h3>
+                <p>To provide accessible, high-quality 1-on-1 tutoring that empowers students to reach their full potential.</p>
+            </div>
+            <div class="value-card">
+                <h3>Our Vision</h3>
+                <p>To become the leading digital learning hub in the Philippines for K-12 and College students.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

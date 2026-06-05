@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Profile - TMD</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+        }
+
+        /* Modern Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #991b1b; /* Deep red branding tone */
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 600;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+        }
+
+        .nav-links a:hover {
+            color: #991b1b;
+        }
+
+        /* Active link targeting the profile page */
+        .nav-links .active-link {
+            color: #991b1b;
+            background-color: #fef2f2;
+        }
+
+        /* Section Layout */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 3.5rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #991b1b;
+            margin: 0.75rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Split Grid Layout */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        /* Corporate Details Styling */
+        .profile-details {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border-top: 5px solid #991b1b;
+        }
+
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .detail-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .detail-item:first-child {
+            padding-top: 0;
+        }
+
+        .detail-label {
+            font-weight: 700;
+            color: #475569;
+        }
+
+        .detail-value {
+            color: #0f172a;
+            text-align: right;
+            font-weight: 500;
+        }
+
+        /* Trust & Verification Side Box */
+        .trust-card {
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 14px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            background: linear-gradient(135deg, #ffffff 0%, #fffbfb 100%);
+            border-left: 5px solid #991b1b;
+        }
+
+        .trust-card h3 {
+            font-size: 1.4rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .trust-card p {
+            color: #64748b;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .highlight-tutor {
+            background-color: #fef2f2;
+            color: #991b1b;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">TMD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="profile.html" class="active-link">Business Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section container">
+        <h2>Business Profile</h2>
+        
+        <div class="profile-grid">
+            <!-- Left Side: Profile Details Table-style Card -->
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span class="detail-label">Business Name</span>
+                    <span class="detail-value">Tutor My Dreams (TMD)</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Location</span>
+                    <span class="detail-value">San Pablo City, Philippines</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Expertise</span>
+                    <span class="detail-value">Online Interactive Tutoring</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Platform</span>
+                    <span class="detail-value">Zoom / Meet / TMD Dashboard</span>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+</body>
+</html>
